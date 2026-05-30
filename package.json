@@ -7,6 +7,7 @@
     "url": "https://github.com/lulucatdev/pi-glm-coding-plan-provider.git"
   },
   "license": "MIT",
+  "files": ["extensions/*/index.ts", "LICENSE", "README.md"],
   "type": "module",
   "keywords": [
     "pi-package",

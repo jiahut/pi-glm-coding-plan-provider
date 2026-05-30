@@ -1,4 +1,4 @@
-import { createJiti } from './node_modules/jiti/lib/jiti.mjs';
+import { createJiti } from '../../node_modules/jiti/lib/jiti.mjs';
 import { createRequire } from 'module';
 import { fileURLToPath } from 'url';
 import path from 'path';
@@ -17,7 +17,7 @@ const jiti = createJiti(import.meta.url, {
   }
 });
 
-const extPath = path.join(__dirname, 'extensions/glm-coding-plan/index.ts');
+const extPath = path.join(__dirname, 'index.ts');
 console.log('Loading extension from:', extPath);
 
 // Create a mock ExtensionAPI
