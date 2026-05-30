@@ -1,5 +1,5 @@
-import type { OAuthCredentials, OAuthLoginCallbacks } from "@mariozechner/pi-ai";
-import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
+import type { OAuthCredentials, OAuthLoginCallbacks } from "@earendil-works/pi-ai";
+import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 
 const PROVIDER_ID = "glm-coding-plan";
 const PROVIDER_NAME = "GLM Coding Plan";
@@ -233,7 +233,7 @@ export default async function glmCodingPlanExtension(pi: ExtensionAPI) {
 
   const providerConfig = (models: ProviderModel[]) => ({
     baseUrl,
-    apiKey: "GLM_CODING_PLAN_API_KEY",
+    apiKey: "$GLM_CODING_PLAN_API_KEY",
     api: "openai-completions" as const,
     models,
     oauth: {
